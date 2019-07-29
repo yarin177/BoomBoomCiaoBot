@@ -19,5 +19,5 @@ def do_turn(pw):
 			if(growRate < planet.growth_rate()):
 				dest = planet
 				growRate = planet.growth_rate()
-		num_ships = source.num_ships() / 2
+		num_ships = source.num_ships()
 		pw.issue_order(source, dest, num_ships)
